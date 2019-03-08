@@ -16,18 +16,19 @@ Use
 
 ```typescript
 import isRecord from '@strong-roots-capital/is-record'
-// TODO: describe usage
+
+const object = fetchMysteryObject()
+if (isRecord(object)) {
+    console.log(object.tradepair) // ok
+} else {
+    console.log(object.tradepair) // potential error!
+}
 ```
 
 Related
 -------
 
-TODO
-
-Acknowledgments
----------------
-
-TODO
+*   [timeseries-record](https://github.com/strong-roots-capital/timeseries-record)
 
 ## Index
 
@@ -45,7 +46,7 @@ TODO
 
 ▸ **isRecord**(object: *`any`*): `boolean`
 
-*Defined in [is-record.ts:13](https://github.com/strong-roots-capital/is-record/blob/842aa65/src/is-record.ts#L13)*
+*Defined in [is-record.ts:13](https://github.com/strong-roots-capital/is-record/blob/7dbe37a/src/is-record.ts#L13)*
 
 Type-guard for `Record`.
 
