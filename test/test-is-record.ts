@@ -197,3 +197,147 @@ test('should function as a type-guard', t => {
         t.fail()
     }
 })
+
+test('should not recognize Records with null Time', t => {
+    const record = {
+        Time: null,
+        Open: 0,
+        High: 0,
+        Low: 0,
+        Close: 0,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with null Open', t => {
+    const record = {
+        Time: 0,
+        Open: null,
+        High: 0,
+        Low: 0,
+        Close: 0,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with null High', t => {
+    const record = {
+        Time: 0,
+        Open: 0,
+        High: null,
+        Low: 0,
+        Close: 0,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with null Low', t => {
+    const record = {
+        Time: 0,
+        Open: 0,
+        High: 0,
+        Low: null,
+        Close: 0,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with null Close', t => {
+    const record = {
+        Time: 0,
+        Open: 0,
+        High: 0,
+        Low: 0,
+        Close: null,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with null Volume', t => {
+    const record = {
+        Time: 0,
+        Open: 0,
+        High: 0,
+        Low: 0,
+        Close: 0,
+        Volume: null
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with NaN Time', t => {
+    const record = {
+        Time: NaN,
+        Open: 0,
+        High: 0,
+        Low: 0,
+        Close: 0,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with NaN Open', t => {
+    const record = {
+        Time: 0,
+        Open: NaN,
+        High: 0,
+        Low: 0,
+        Close: 0,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with NaN High', t => {
+    const record = {
+        Time: 0,
+        Open: 0,
+        High: NaN,
+        Low: 0,
+        Close: 0,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with NaN Low', t => {
+    const record = {
+        Time: 0,
+        Open: 0,
+        High: 0,
+        Low: NaN,
+        Close: 0,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with NaN Close', t => {
+    const record = {
+        Time: 0,
+        Open: 0,
+        High: 0,
+        Low: 0,
+        Close: NaN,
+        Volume: 0
+    }
+    t.false(isRecord(record))
+})
+
+test('should not recognize Records with NaN Volume', t => {
+    const record = {
+        Time: 0,
+        Open: 0,
+        High: 0,
+        Low: 0,
+        Close: 0,
+        Volume: NaN
+    }
+    t.false(isRecord(record))
+})

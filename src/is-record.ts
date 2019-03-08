@@ -11,10 +11,10 @@ import Record from 'timeseries-record'
  * Type-guard for `Record`.
  */
 export default function isRecord(object: any): object is Record {
-    return !is.undefined(object.Time) && is.number(object.Time)
-        && !is.undefined(object.Open) && is.number(object.Open)
-        && !is.undefined(object.High) && is.number(object.High)
-        && !is.undefined(object.Low) && is.number(object.Low)
-        && !is.undefined(object.Close) && is.number(object.Close)
-        && !is.undefined(object.Volume) && is.number(object.Volume)
+    return !is.nullOrUndefined(object.Time) && is.number(object.Time) && !is.nan(object.Time)
+        && !is.nullOrUndefined(object.Open) && is.number(object.Open) && !is.nan(object.Open)
+        && !is.nullOrUndefined(object.High) && is.number(object.High) && !is.nan(object.High)
+        && !is.nullOrUndefined(object.Low) && is.number(object.Low) && !is.nan(object.Low)
+        && !is.nullOrUndefined(object.Close) && is.number(object.Close) && !is.nan(object.Close)
+        && !is.nullOrUndefined(object.Volume) && is.number(object.Volume) && !is.nan(object.Volume)
 }
