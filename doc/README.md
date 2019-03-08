@@ -46,7 +46,7 @@ Related
 
 ▸ **isRecord**(object: *`any`*): `boolean`
 
-*Defined in [is-record.ts:13](https://github.com/strong-roots-capital/is-record/blob/7dbe37a/src/is-record.ts#L13)*
+*Defined in [is-record.ts:13](https://github.com/strong-roots-capital/is-record/blob/8902e76/src/is-record.ts#L13)*
 
 Type-guard for `Record`.
 
