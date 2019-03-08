@@ -12,13 +12,15 @@ npm install @strong-roots-capital/is-record
 
 ``` typescript
 import isRecord from '@strong-roots-capital/is-record'
-// TODO: describe usage
+
+const object = fetchMysteryObject()
+if (isRecord(object)) {
+    console.log(object.tradepair) // ok
+} else {
+    console.log(object.tradepair) // potential error!
+}
 ```
 
 ## Related
 
-TODO
-
-## Acknowledgments
-
-TODO
+- [timeseries-record](https://github.com/strong-roots-capital/timeseries-record)
