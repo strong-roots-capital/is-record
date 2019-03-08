@@ -39,7 +39,9 @@
   },
   "homepage": "https://github.com/strong-roots-capital/is-record",
   "dependencies": {
+    "@sindresorhus/is": "^0.15.0",
     "@types/node": "^10.12.18",
+    "timeseries-record": "^1.0.0",
     "typescript": "^3.2.2"
   },
   "devDependencies": {
