@@ -15,9 +15,9 @@ import isRecord from '@strong-roots-capital/is-record'
 
 const object = fetchMysteryObject()
 if (isRecord(object)) {
-    console.log(object.tradepair) // ok
+    console.log(object.Volume) // ok
 } else {
-    console.log(object.tradepair) // potential error!
+    console.log(object.Volume) // potential error!
 }
 ```
 
