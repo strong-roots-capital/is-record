@@ -19,9 +19,9 @@ import isRecord from '@strong-roots-capital/is-record'
 
 const object = fetchMysteryObject()
 if (isRecord(object)) {
-    console.log(object.tradepair) // ok
+    console.log(object.Volume) // ok
 } else {
-    console.log(object.tradepair) // potential error!
+    console.log(object.Volume) // potential error!
 }
 ```
 
@@ -46,7 +46,7 @@ Related
 
 ▸ **isRecord**(object: *`any`*): `boolean`
 
-*Defined in [is-record.ts:13](https://github.com/strong-roots-capital/is-record/blob/96bb49a/src/is-record.ts#L13)*
+*Defined in [is-record.ts:13](https://github.com/strong-roots-capital/is-record/blob/09cb0cd/src/is-record.ts#L13)*
 
 Type-guard for `Record`.
 
