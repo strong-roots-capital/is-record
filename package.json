@@ -1,6 +1,6 @@
 {
   "name": "@strong-roots-capital/is-record",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Type-guard for Record",
   "main": "dist/is-record.js",
   "types": "dist/is-record.d.ts",
