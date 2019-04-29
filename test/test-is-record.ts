@@ -7,6 +7,14 @@ import Record from 'timeseries-record'
 
 import isRecord from '../src/is-record'
 
+test('should not recognize null objects', t => {
+    t.false(isRecord(null))
+})
+
+test('should not recognize undefined objects', t => {
+    t.false(isRecord(undefined))
+})
+
 test('should recognize Records', t => {
     const record = {
         Time: 0,
@@ -192,7 +200,7 @@ test('should function as a type-guard', t => {
     }
     if (isRecord(record)) {
         let record2: Record = record
-        t.pass()
+        t.true(record2.Time === 0)
     } else {
         t.fail()
     }
